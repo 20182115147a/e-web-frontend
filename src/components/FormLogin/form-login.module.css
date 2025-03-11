@@ -1,0 +1,86 @@
+.form-login-wrapper {
+    width: 400px;
+    display: flex;
+    height: 477px;
+    background-color: white;
+    margin-left: auto;
+    align-self: center;
+    border-radius: 1%;
+}
+.form-login-container {
+    width: 100%;
+}
+.form-login-header-text {
+    font-family:sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 8.5rem
+}
+.form-login-password {
+    position: relative;
+    display: flex;
+}
+.form-login-password button {
+    position: absolute;
+    top: 49%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form-login-input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .14);
+    outline: none;
+    font-size: .75rem;
+}
+.form-login-input:focus {
+    border: 1px solid rgba(40, 37, 37, 0.5);
+}
+.form-login-container {
+    padding: 0px 30px;
+}
+.form-login-header-text {
+    padding: 20px 0px;
+    margin: auto;
+    font-size: 20px;
+}
+.form-login-input {
+    padding: .75rem;
+    border-radius: 1%;
+}
+ .form-login-input{
+    margin-bottom: 10px;
+}
+.form-login-submit {
+    background-color: var(--primary-color);
+    height: 2.5rem;
+    min-width: 100%;
+    margin-top: 20px;
+    cursor:pointer;
+    color: #ffffff;
+}
+.form-link-register {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, .26);
+    text-align: center;
+}
+.form-link-register a{
+    color: var(--primary-color)
+}
+.form-login-message-container {
+    margin-bottom: 25px;
+    background-color: #fff9fa;
+    border: 1px solid rgba(255, 66, 79, .2);
+    padding: .75rem .9375rem;
+    font-size: .75rem;
+    display: none;
+}
+.errors-message {
+    font-size: .75rem;
+    color: rgba(242, 34, 34, 0.867);
+    margin: 10px 0;
+}
+.register-modal {
+    background-color: var(--primary-color);
+}

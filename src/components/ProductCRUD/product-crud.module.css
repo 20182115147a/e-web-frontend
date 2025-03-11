@@ -1,0 +1,15 @@
+.form-container {
+    margin-top: 9rem;
+    color: var(--primary-color);
+}
+.form-container h1 {
+    text-align: center;
+   
+}
+.form-wrapper {
+    max-width: 1200px;
+    margin: .5rem auto;
+}
+.errors-message {
+    color: red;
+}

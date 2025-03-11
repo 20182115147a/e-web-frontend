@@ -1,0 +1,42 @@
+.login-header {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login-container {
+    padding: 10px 0px;
+}
+.left-header {
+    flex-shrink: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.right-header {
+    margin:20px 60px 20px 0px;
+}
+.right-header .need-help-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.login-text {
+    font-size: 25px;
+    margin: 0 0 0 20px;
+    height: auto;
+}
+.login-content {
+    background-image: url('../../../public/images/shopee-login-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 600px;
+    width: 1084px;
+
+}
+.login-content-container {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

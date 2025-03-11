@@ -1,0 +1,16 @@
+
+.my-product-list-container {
+    margin-top: 10rem;
+}
+.my-product-list-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+.product-image {
+    width: 40px;
+    height: auto;
+    margin: 0 auto;
+}
+.my-product-list-container table td {
+    vertical-align: center;
+}

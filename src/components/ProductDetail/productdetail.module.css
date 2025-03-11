@@ -1,0 +1,142 @@
+/* CSS cho chi tiết sản phẩm */
+.product-detail {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    max-width: 1200px;
+    margin: 8rem auto 0px;
+  }
+  
+  .product-detail h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color); /* Màu cam Shopee */
+    margin-bottom: 15px;
+  }
+  
+  .product-images {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .product-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-detail p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail p span {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #FF5B00; /* Màu cam Shopee */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #e14b00; /* Màu cam đậm hơn khi hover */
+  }
+  
+  .ratings h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .ratings {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .ratings .rating-item {
+    margin-bottom: 15px;
+  }
+  
+  .ratings p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .ratings .rating-item p:first-child {
+    font-weight: bold;
+  }
+  
+  .ratings .rating-item p:last-child {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Thêm một số hiệu ứng khi không có hình ảnh */
+  .product-images img:empty {
+    background-color: #e0e0e0;
+    color: #999;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 150px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .add-to-cart {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .product-detail {
+      padding: 10px;
+      margin-top: 0px;
+    }
+  
+    .product-detail h1 {
+      font-size: 20px;
+    }
+  
+    .product-images {
+      flex-direction: column;
+      max-width: 60%;
+      align-items: center;
+      height: auto;
+    }
+  
+    .product-detail .price {
+      font-size: 24px;
+    }
+  
+    .product-detail p {
+      font-size: 14px;
+    }
+  
+    .ratings h3 {
+      font-size: 18px;
+    }
+  
+    .rating p {
+      font-size: 12px;
+    }
+  }

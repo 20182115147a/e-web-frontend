@@ -1,0 +1,27 @@
+.filterContainer {
+    width: 14%;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .categoryList {
+    list-style: none;
+    padding: 0;
+}
+
+.categoryItem {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.radioButton {
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  

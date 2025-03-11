@@ -1,0 +1,4 @@
+.slide {
+    background-image: url('../../../public//images/slide1.jpg');
+    z-index: 1000;
+} 
