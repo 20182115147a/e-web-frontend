@@ -31,16 +31,14 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const userLocal = localStorage.getItem("user");
-    
+    console.log('userLocal', userLocal)
     if (token) {
       setIsAuthenticated(true);
     }
-    console.log(userLocal)
     if(userLocal) {
-      setUser({
-        ...JSON.parse(userLocal),
-        id: JSON.parse(userLocal)._id
-      })
+      setUser(
+        JSON.parse(userLocal)
+      )
     }
   }, []);
 
@@ -49,6 +47,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("user",JSON.stringify(user))
     setIsAuthenticated(true);
     setUser(user)
+    console.log(user)
   };
 
   const logout = () => {
