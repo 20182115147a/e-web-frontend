@@ -5,11 +5,13 @@ import { RootState } from "../../store/store";
 import { useAuth } from "../AuthContext/AuthContext";
 import checkoutServices from "../../services/OrdersServices.ts/checkoutServices";
 import styles from './cart.module.css'; // Import CSS Module
+import { useNavigate } from "react-router-dom";
 
 const Cart: React.FC = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const { getUser } = useAuth();
+  const negative = useNavigate()
   const user = getUser();
   const [paymentStatus, setPaymentStatus] = useState<string | null>(null);
 
@@ -27,7 +29,10 @@ const Cart: React.FC = () => {
 
   const handleCheckout = async () => {
     const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
+    if (!user._id) {
+      negative('/login')
+      return
+    }
     const orderData = {
       userId: user._id,
       items: cartItems.map((item) => ({
