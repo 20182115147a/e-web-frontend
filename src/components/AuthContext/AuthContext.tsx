@@ -40,7 +40,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const login = (token: string, user: User) => {
-    console.log(user)
     localStorage.setItem("token", token);
     localStorage.setItem("user",JSON.stringify(user))
     setIsAuthenticated(true);

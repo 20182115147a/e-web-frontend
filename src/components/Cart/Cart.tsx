@@ -29,7 +29,7 @@ const Cart: React.FC = () => {
 
   const handleCheckout = async () => {
     const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    if (!user._id) {
+    if(user.username) {
       negative('/login')
       return
     }
