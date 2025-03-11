@@ -11,7 +11,7 @@ const MyProductList: React.FC = function() {
     const [products,setProducts] = useState<ProductCRUD[]>([])
     const [show, setShow] = useState(false);
     const [product, setProductId] = useState("");
-    const user = getUser()?.id
+    const user = getUser()?._id
     const navigate = useNavigate();
     useEffect(() => {
         if(user) {

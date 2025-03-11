@@ -60,8 +60,8 @@ const ProductCRUD:React.FC = function() {
               formData.append('images',image)
             })
           }
-          if(user?.id) {
-            formData.append('seller',user.id)
+          if(user?._id) {
+            formData.append('seller',user._id)
           }
           if(stock) {
             formData.append('stock',stock)
