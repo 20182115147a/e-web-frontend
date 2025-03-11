@@ -21,7 +21,6 @@ const ProductList: React.FC = () => {
         return res.json()
     }).then((data) => {
       setProducts(data.products)
-        console.log(products)
     })
     },[])
     const handleLoadMore = () => {

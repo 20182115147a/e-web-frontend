@@ -35,6 +35,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     if (token) {
       setIsAuthenticated(true);
     }
+    console.log(userLocal)
     if(userLocal) {
       setUser({
         ...JSON.parse(userLocal),

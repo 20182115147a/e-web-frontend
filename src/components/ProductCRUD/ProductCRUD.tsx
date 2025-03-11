@@ -40,7 +40,6 @@ const ProductCRUD:React.FC = function() {
         category,
         stock
       }) {
-        console.log(user)
           const formData = new FormData()
 
           if(name) {
