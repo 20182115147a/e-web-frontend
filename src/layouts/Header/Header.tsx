@@ -66,7 +66,10 @@ const Header:React.FC = function() {
                 <a href=""><i className="bi bi-question-circle"></i>Hỗ trợ</a>
             </li>
             <li className="">
-             {!user?.username && (<a href={'/login'} className={style['user-name']}>Đăng nhập</a>)}
+             {!user?.username && (<a onClick={(e) => {
+                e.preventDefault()
+                negative('/login')
+             }} className={style['user-name']}>Đăng nhập</a>)}
              {
                 user.username && <>
                 <Dropdown>
