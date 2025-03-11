@@ -1,0 +1,19 @@
+
+    {
+        "redirects": [
+          {
+            "source": "/:path*",
+            "destination": "/",
+            "permanent": false
+          }
+        ],
+        "rewrites": [
+          {
+            "source": "/:path*",
+            "destination": "/index.html"
+          }
+        ]
+      }
+      
+  
+  
