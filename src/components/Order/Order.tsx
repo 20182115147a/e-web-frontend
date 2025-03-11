@@ -10,9 +10,9 @@ const OrderHistory: React.FC = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      if (user.id) {
+      if (user._id) {
         try {
-          await fetch(`https://e-web-backend.onrender.com/orders/${user.id}`).then((res) => {
+          await fetch(`https://e-web-backend.onrender.com/orders/${user._id}`).then((res) => {
             return res.json();
           }).then((data) => {
             if (data.success) {
@@ -27,7 +27,7 @@ const OrderHistory: React.FC = () => {
     };
 
     fetchOrders();
-  }, [user.id]);
+  }, [user._id]);
 
   return (
     <div className={styles.container}>

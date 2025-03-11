@@ -29,7 +29,7 @@ const Cart: React.FC = () => {
     const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     const orderData = {
-      userId: user.id,
+      userId: user._id,
       items: cartItems.map((item) => ({
         productId: item._id,
         quantity: item.quantity,
