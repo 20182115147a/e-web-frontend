@@ -4,7 +4,7 @@ import FormLogin from "../../components/FormLogin/FormLogin"
 import style from './login.module.css'
 import { useLocation } from "react-router-dom"
 
- const Login = () => {
+ const Login: React.FC = () => {
     const location = useLocation()
     const isRegister = location.pathname === '/register' 
     return <div className={style['login-container']}>
