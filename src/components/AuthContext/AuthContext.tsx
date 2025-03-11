@@ -31,7 +31,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const userLocal = localStorage.getItem("user");
-    console.log('userLocal', userLocal)
     if (token) {
       setIsAuthenticated(true);
     }
@@ -47,7 +46,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("user",JSON.stringify(user))
     setIsAuthenticated(true);
     setUser(user)
-    console.log(user)
   };
 
   const logout = () => {
