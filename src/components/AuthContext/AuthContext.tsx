@@ -10,7 +10,7 @@ interface AuthContextType {
   getProductId: () => string
 }
 interface User {
-  _id?: string
+  id?: string
   username?: string,
   email?: string,
   role?: string,
@@ -31,11 +31,15 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     const userLocal = localStorage.getItem("user");
+    
     if (token) {
       setIsAuthenticated(true);
     }
     if(userLocal) {
-      setUser(JSON.parse(userLocal))
+      setUser({
+        ...JSON.parse(userLocal),
+        id: JSON.parse(userLocal)._id
+      })
     }
   }, []);
 
