@@ -18,7 +18,6 @@ const OrderHistory: React.FC = () => {
             if (data.success) {
               setOrders(data.orders);
             }
-            console.log(data);
           });
         } catch (error) {
           console.error("Lỗi khi lấy thông tin đơn hàng:", error);

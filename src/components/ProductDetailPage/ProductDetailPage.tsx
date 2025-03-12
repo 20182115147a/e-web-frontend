@@ -19,7 +19,6 @@ const ProductDetailPage: React.FC = () => {
            setProduct(data.product);
        })
       } catch (err) {
-        console.log(err)
         setError("Không thể tải thông tin sản phẩm.");
       } finally {
         setLoading(false);
