@@ -29,7 +29,6 @@ const Cart: React.FC = () => {
 
   const handleCheckout = async () => {
     const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    console.log('user', user)
     if(!user.id) {
       negative('/login')
       return
@@ -74,7 +73,7 @@ const Cart: React.FC = () => {
         <ul className={styles.cartItems}>
           {cartItems.map((item) => (
             <li key={item._id} className={styles.cartItem}>
-              <img src={`https://e-web-backend.onrender.com/${item.images[0]}`} alt={item.name} className={styles.cartItemImage} />
+              <img src={item.images[0]} alt={item.name} className={styles.cartItemImage} />
               <div className={styles.cartItemDetails}>
                 <h3 className={styles.cartItemName}>{item.name}</h3>
                 <p className={styles.cartItemPrice}>{item.price.toLocaleString()} VNĐ</p>

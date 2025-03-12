@@ -34,7 +34,6 @@ const Header:React.FC = function() {
       logout();
       window.location.href = "/login";
     }
-    console.log(user)
   }, []);
     if(isShowHeader) {
         return  <div className={style['header-container']}>

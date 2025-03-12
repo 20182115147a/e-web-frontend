@@ -38,7 +38,7 @@ const ProductList: React.FC = () => {
           <div key={product._id} className={styles.product} onClick={() => {
             handleShowProduct(product._id)
           }}>
-            <img src={`https://e-web-backend.onrender.com/${product.images[0]}`} alt={product.name} className={styles.productImg} />
+            <img src={product.images[0]} alt={product.name} className={styles.productImg} />
             <h3 className={styles.productName}>{product.name}</h3>
             <p className={styles.price}>{product.price}</p>
             <p className={styles.stock}>Số lượng: {product.stock}</p>
