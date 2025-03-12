@@ -39,6 +39,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         JSON.parse(userLocal)
       )
     }
+    console.log(userLocal)
   }, []);
 
   const login = (token: string, user: User) => {
@@ -46,6 +47,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("user",JSON.stringify(user))
     setIsAuthenticated(true);
     setUser(user)
+    console.log(user)
   };
 
   const logout = () => {
