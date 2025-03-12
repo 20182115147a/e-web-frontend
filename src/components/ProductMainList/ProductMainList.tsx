@@ -37,7 +37,7 @@ const ProductMainList: React.FC<ProductMainListProps> = ({ products, onSort }) =
             handleShowProduct(product._id)
           }}>
             <img
-              src={`https://e-web-backend.onrender.com/${product.images[0]}`}
+              src={`${product.images[0]}`}
               alt={product.name}
               className={styles.productImage}
             />

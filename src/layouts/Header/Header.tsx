@@ -73,7 +73,7 @@ const Header:React.FC = function() {
                 user.username && <>
                 <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-               <img className={style['user-avatar']} src={`https://e-web-backend.onrender.com/${user.profile?.avatar}`}/>
+               <img className={style['user-avatar']} src={user.profile?.avatar}/>
                {user.username}
       </Dropdown.Toggle>
 

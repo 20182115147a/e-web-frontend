@@ -56,7 +56,7 @@ const MyProductList: React.FC = function() {
                {products && products.map((product,index) => {
                 return  <tr>
                 <td>{index + 1}</td>
-                <td><img className={styles["product-image"]} src={`https://e-web-backend.onrender.com/${product.images[0]}`}/></td>
+                <td><img className={styles["product-image"]} src={`${product.images[0]}`}/></td>
                 <td>{product.name}</td>
                 <td>{product.stock}</td>
                 <td>{product.price}</td>

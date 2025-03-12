@@ -25,7 +25,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
       <h1>{product.name}</h1>
       <div className={styles["product-images"]}>
         {product.images.map((image, index) => (
-          <img key={index} src={`https://e-web-backend.onrender.com/${image}`} alt={`Product ${index + 1}`} />
+          <img key={index} src={`${image}`} alt={`Product ${index + 1}`} />
         ))}
       </div>
       <p>{product.description}</p>
